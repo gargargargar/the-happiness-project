@@ -24,7 +24,7 @@ This project was created by [Chris Fan](github.com/chrisfence), [Jinghan (Michae
 
 We initially identified [World Bank's World Development Indicators](https://datacatalog.worldbank.org/dataset/world-development-indicators) as a major reference dataset. We realized that we wanted to utilize this comprehensive set of data, which includes around 1400 different features for a nation and up to 50 years worth of datapoints, to find out how different socioeconomic factors affect people's lives and how indicative these factors can be of people's lives.
 
-![Screenshot of the raw World Development Indicators dataset](https://imgur.com/8nwhtxN)
+![Screenshot of the raw World Development Indicators dataset](img/raw-dataset.PNG)
 
 We researched further to find out what would be a good indicator for people's quality of lives, and we discovered the [World Happiness Report](https://www.kaggle.com/unsdsn/world-happiness) dataset available on Kaggle. Our goal now focused on
 1. determining correlation between the development indicators and the happiness scores, and
@@ -35,9 +35,15 @@ While the World Development Indicators (WDI) dataset was relatively comprehensiv
 1. only contain data form 2015-2019, and
 2. only contain features lacked data for no less than 20 countries.
 
+![Screenshot of clean dataset](img/final-dataset.png)
+
+In consideration of future model-building, we decided to pick 15 indicators out of the 100 we have left after data cleaning. We achieved this through
+1. analyzing the correlation between the 100 indicators and the happiness score, and ![Initial correlation analysis](img/correlation-code.png)
+2. using Anaconda's Orange to create a decision tree. ![Decision tree](img/decision-tree.png)
+
 
 ## Phase 3 - Lasso Regression
-With the now-clean dataset, we plugged each countries happiness scores and development indicators into [`scikit-learn`'s lasso regression model](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html). We tested a few test size values to optimize the result, and our final model, using a test size of 0.2, yielded a accuracy rating of 73%. We also identified the most influential factors as determined by our lasso regression, listed by our [results](## What We Accomplished).
+With the now-clean dataset, we plugged each countries happiness scores and development indicators into [`scikit-learn`'s lasso regression model](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html). We tested a few test size values to optimize the result, and our final model, using a test size of 0.2, yielded a accuracy rating of 73%. We also identified the most influential factors as determined by our lasso regression, listed by our [results](##markdown-header-what-we-accomplished).
 
 ## References
 
