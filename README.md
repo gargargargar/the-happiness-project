@@ -1,12 +1,12 @@
 # The Happiness Project
 
 ## Pinpointing the factors that make countries the happiest!
-Inspired by the 2020 Hacklytics' theme of analyzing data for social good, we focused on people's perception of countries around the world. We wanted to
+Inspired by the 2020 Hacklytics' theme of **analyzing data for social good**, we focused on people's perception of countries around the world. We wanted to
 1. Determine which significant socioeconomic factors have the most effect on a country's happiness, and
 2. Create a model that accurately predicts the happiness value of any given country based on 10-20 of its socioeconomic factors. 
 
 ## What We Accomplished
-At the conclusion of the hackathon/datathon, we were able to create a lasso regression that had a ~73% accuracy of predicting a nation's happiness value. We further identified 10 of the most important socioeconomic development factors that affected a country's happiness score, listed as follows:
+At the conclusion of the hackathon/datathon, we were able to create a lasso regression that had a **~73% accuracy** of predicting a nation's happiness value. We further identified **10 of the most important socioeconomic development factors** that affected a country's happiness score, listed as follows:
 1. Life expectancy of females at birth
 2. Urban population (% of total population)
 3. Access to electricity (% of population)
