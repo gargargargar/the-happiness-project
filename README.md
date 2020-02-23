@@ -24,6 +24,8 @@ This project was created by [Chris Fan](github.com/chrisfence), [Jinghan (Michae
 
 We initially identified [World Bank's World Development Indicators](https://datacatalog.worldbank.org/dataset/world-development-indicators) as a major reference dataset. We realized that we wanted to utilize this comprehensive set of data, which includes around 1400 different features for a nation and up to 50 years worth of datapoints, to find out how different socioeconomic factors affect people's lives and how indicative these factors can be of people's lives.
 
+![Screenshot of the raw World Development Indicators dataset](https://imgur.com/8nwhtxN)
+
 We researched further to find out what would be a good indicator for people's quality of lives, and we discovered the [World Happiness Report](https://www.kaggle.com/unsdsn/world-happiness) dataset available on Kaggle. Our goal now focused on
 1. determining correlation between the development indicators and the happiness scores, and
 2. creating a regression that can predict happiness scores based on the development indicators.
